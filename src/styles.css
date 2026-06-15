@@ -1,0 +1,282 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/*
+ * NETRA-RAIL MOBILE — design system
+ * Solid Navy base + Official Government-of-India trust layer.
+ * All colors in oklch. Never hardcode colors in components.
+ */
+
+:root {
+  --radius: 0.85rem;
+
+  --font-display: "Space Grotesk", "Sora", system-ui, sans-serif;
+  --font-sans: "Noto Sans", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Official Main Web App Color Palette & Hybrid Blend (Dark Navy Body + White Glass Cards) */
+  --background: #0b1329;
+  --cream: oklch(0.985 0.005 90);
+  --foreground: oklch(0.98 0.01 250);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0.04 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.04 250);
+
+  --primary: oklch(0.34 0.08 250);
+  --primary-foreground: oklch(0.99 0 0);
+  --rail: oklch(0.34 0.08 250);
+
+  --secondary: oklch(0.96 0.01 90);
+  --secondary-foreground: oklch(0.22 0.04 250);
+  --muted: oklch(0.97 0.005 90);
+  --muted-foreground: oklch(0.5 0.02 250);
+
+  --accent: oklch(0.95 0.02 80);
+  --accent-foreground: oklch(0.34 0.08 250);
+
+  --saffron: oklch(0.78 0.16 70);
+  --saffron-foreground: oklch(0.25 0.05 70);
+  --emerald: oklch(0.7 0.16 165);
+  --emerald-foreground: oklch(0.99 0 0);
+  --violet: oklch(0.6 0.2 295);
+  --rose: oklch(0.68 0.2 15);
+  --sky: oklch(0.7 0.13 230);
+  --teal: oklch(0.7 0.13 195);
+  --sun: oklch(0.85 0.16 95);
+  --destructive: oklch(0.62 0.22 25);
+  --destructive-foreground: oklch(0.99 0 0);
+
+  --border: oklch(0.92 0.01 250);
+  --input: oklch(0.92 0.01 250);
+  --ring: oklch(0.34 0.08 250);
+
+  /* NETRA tokens */
+  --cyan: oklch(0.7 0.13 230);
+  --india-green: oklch(0.7 0.16 165);
+  --live: oklch(0.7 0.16 165);
+  --warn: oklch(0.78 0.16 70);
+  --critical: oklch(0.62 0.22 25);
+  --surface: oklch(0.97 0.005 90);
+  --surface-2: oklch(0.95 0.01 90);
+  --hairline: oklch(0.92 0.01 250);
+
+  --chart-1: oklch(0.34 0.08 250);
+  --chart-2: oklch(0.6 0.2 295);
+  --chart-3: oklch(0.7 0.16 165);
+  --chart-4: oklch(0.78 0.16 70);
+  --chart-5: oklch(0.62 0.22 25);
+
+  --sidebar: #0b1329;
+  --sidebar-foreground: oklch(0.98 0.01 250);
+  --sidebar-primary: oklch(0.34 0.08 250);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.95 0.02 80);
+  --sidebar-accent-foreground: oklch(0.34 0.08 250);
+  --sidebar-border: oklch(0.92 0.01 250);
+  --sidebar-ring: oklch(0.34 0.08 250);
+
+  --gradient-night: linear-gradient(180deg, #0b1329 0%, #0e1938 100%);
+  --gradient-live: linear-gradient(90deg, oklch(0.34 0.08 250), oklch(0.6 0.2 295) 45%, oklch(0.78 0.16 70));
+  --gradient-tricolour: linear-gradient(
+    90deg,
+    var(--saffron) 0%,
+    var(--saffron) 33%,
+    #ffffff 33%,
+    #ffffff 66%,
+    var(--emerald) 66%,
+    var(--emerald) 100%
+  );
+  --shadow-glow: 0 0 16px oklch(0.34 0.08 250 / 0.3);
+  --shadow-panel: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+}
+
+.gov-light {
+  --background: #0b1329;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  body {
+    background-color: #0b1329;
+    color: #f8fafc;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    overscroll-behavior-y: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  button, input, select, textarea {
+    font-weight: 700;
+  }
+
+  /* Safe area helpers for modern mobile viewports (Notch/Dynamic Island & Home bar) */
+  .safe-pt {
+    padding-top: max(0.75rem, env(safe-area-inset-top));
+  }
+  .safe-pb {
+    padding-bottom: max(0.6rem, env(safe-area-inset-bottom));
+  }
+  .safe-mb {
+    margin-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbars while preserving touch scrolling */
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .glass {
+    background: color-mix(in oklab, white 88%, transparent);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid oklch(0.92 0.01 250 / 0.5);
+    color: oklch(0.22 0.04 250);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.35);
+  }
+
+  .tricolour-rule {
+    background: linear-gradient(90deg, #f59e0b 0% 33.3%, #ffffff 33.3% 66.6%, #10b981 66.6% 100%);
+  }
+
+  .text-gradient-live {
+    color: #38bdf8;
+  }
+
+  .bg-live-gradient {
+    background-color: oklch(0.34 0.08 250);
+    color: #ffffff;
+  }
+
+  .glow-ring {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .press {
+    transition:
+      transform 0.14s cubic-bezier(0.2, 0.8, 0.2, 1),
+      box-shadow 0.2s ease;
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+
+  .skeleton-shimmer {
+    background-image: linear-gradient(
+      90deg,
+      var(--surface) 0%,
+      var(--surface-2) 50%,
+      var(--surface) 100%
+    );
+    background-size: 200% 100%;
+    animation: var(--animate-shimmer);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+@keyframes radar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(0.86);
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: -180% 0;
+  }
+  100% {
+    background-position: 180% 0;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: -60;
+  }
+}
+@keyframes scanline {
+  0% {
+    transform: translateY(-110%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110%);
+    opacity: 0;
+  }
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translateX(-1.5px);
+  }
+  30%,
+  70% {
+    transform: translateX(2.5px);
+  }
+  50% {
+    transform: translateX(-2.5px);
+  }
+}
+@keyframes float-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

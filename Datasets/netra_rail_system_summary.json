@@ -1,0 +1,43 @@
+{
+  "system": "NETRA-RAIL",
+  "version": "1.0.0",
+  "generated": "2026-06-14 04:20:19",
+  "hackathon": "Far Away 2026 | Theme: Railways",
+  "team": [
+    "Manasvi Gangrade",
+    "Navneet Kaur",
+    "Suhani Sharma",
+    "Muskan Lodhi"
+  ],
+  "pillar_a_summary": {
+    "total_vessels": 120,
+    "avg_dwell_reduction_pct": 86.9,
+    "total_demurrage_saved_inr": 163981869,
+    "ports_covered": [
+      "Mundra",
+      "JNPT Mumbai",
+      "Vishakhapatnam",
+      "Chennai"
+    ]
+  },
+  "pillar_b_summary": {
+    "total_trains": 500,
+    "precedence_overrides": 161,
+    "avg_throughput_improvement_pct": 45.6,
+    "avg_jssp_solve_ms": 218.7,
+    "convergence_rate_pct": 84.6
+  },
+  "pillar_c_summary": {
+    "total_sensor_readings": 2000,
+    "anomalies_detected": 111,
+    "anomaly_rate_pct": 5.55,
+    "flags_dispatched_to_pillar_d": 99
+  },
+  "pillar_d_summary": {
+    "total_missions": 80,
+    "defects_confirmed": 25,
+    "tracks_cleared": 55,
+    "avg_transit_time_minutes": 9.4,
+    "avg_cv_confidence": 0.964
+  }
+}

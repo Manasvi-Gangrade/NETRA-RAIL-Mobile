@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "2026-08-22 13:16:52",
+    "user_query": "Set slow zone on Section 5 to 30 kmh",
+    "language": "English",
+    "bot_response": "Acknowledged. Enforced temporary 30 km/h speed limit on Section 5. Telemetry logs updated successfully.",
+    "action_triggered": "Slow Zone applied on Section 5"
+  },
+  {
+    "timestamp": "2026-08-22 13:17:00",
+    "user_query": "What is current section traffic throughput frequency?",
+    "language": "English",
+    "bot_response": "Throughput scheduler status: Convergence rate is stable at 84.6% with sub-second JSSP priority overrides active.",
+    "action_triggered": null
+  }
+]
