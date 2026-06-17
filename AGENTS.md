@@ -1,10 +1,8 @@
-<!-- LOVABLE:BEGIN -->
-> [!IMPORTANT]
-> This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
-> published git history — force pushing, or rebasing/amending/squashing commits
-> that are already pushed — as it rewrites history on Lovable's side and the
-> user will likely lose their project history.
->
-> Commits you push to the connected branch sync back to Lovable and show up in
-> the editor, so keep the branch in a working state.
-<!-- LOVABLE:END -->
+# NETRA-RAIL Mobile Development Guidelines
+
+This project is the official role-adaptive mobile companion application for **NETRA-RAIL** (National Enterprise Traffic, Routing & Autonomous Rail-Grid).
+
+## Architectural Guidelines
+- **Solid Color Aesthetic**: Strict dark-navy mission-control design system (`#0b1329` base) with solid backgrounds and high contrast typography. No unnecessary visual gradients.
+- **Role-Adaptive Layout**: Four role interfaces (Passenger, Freight, Controller, Trackman) driven by centralized telemetry datasets (`Datasets/` directory).
+- **Train Motion Animations**: High-speed train animations and live radar pulse indicators across splash and boot loaders.

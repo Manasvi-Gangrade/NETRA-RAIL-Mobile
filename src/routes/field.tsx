@@ -164,6 +164,33 @@ function FieldPage() {
           </div>
         </section>
 
+        {/* SOS / Hazard Escalation & Offline Sync Status */}
+        <GlassCard className="p-4 border-critical/30 bg-critical/5">
+          <div className="flex items-center justify-between gap-3">
+            <div>
+              <h3 className="text-[13px] font-bold text-critical flex items-center gap-1.5">
+                <AlertTriangle className="h-4 w-4 text-critical animate-pulse" /> SOS / Trackside Hazard Escalation
+              </h3>
+              <p className="mt-0.5 text-[10.5px] text-muted-foreground">
+                Immediate priority broadcast to Section Controller & nearest Gang.
+              </p>
+            </div>
+            <PressButton 
+              tone="critical" 
+              className="px-4 py-2 text-[12px] font-bold shrink-0"
+              onClick={() => alert("SOS Hazard Alert Broadcasted to Section Control & Emergency Gang!")}
+            >
+              EMERGENCY SOS
+            </PressButton>
+          </div>
+          <div className="mt-3 flex items-center justify-between border-t border-hairline pt-2 text-[10px] text-muted-foreground">
+            <span className="flex items-center gap-1 font-mono text-cyan">
+              <CheckCircle2 className="h-3 w-3 text-cyan" /> Offline-First Storage Active (WatermelonDB)
+            </span>
+            <span>Auto-syncs when in range</span>
+          </div>
+        </GlassCard>
+
         <p className="pb-2 text-center text-[10px] text-muted-foreground">
           Indian Railways Permanent Way Manual (IRPWM) · Safety First
         </p>

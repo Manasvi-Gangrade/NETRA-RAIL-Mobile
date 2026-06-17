@@ -82,6 +82,21 @@ function FreightPage() {
         <VesselFeed />
         <DispatchQueue />
         <ThroughputChart />
+
+        <GlassCard className="flex items-center justify-between p-3.5">
+          <div>
+            <h3 className="text-[12.5px] font-bold text-foreground">Shift Handover Audit</h3>
+            <p className="text-[10.5px] text-muted-foreground">Export shift log with all AI overrides & vessel discharge state</p>
+          </div>
+          <PressButton 
+            tone="ghost" 
+            className="text-[11.5px] py-2 px-3 shrink-0"
+            onClick={() => alert("Shift Handover Report generated & saved as PDF/JSON audit log.")}
+          >
+            Export Report
+          </PressButton>
+        </GlassCard>
+
         <p className="pb-2 text-center text-[10px] text-muted-foreground">
           Dedicated Freight Corridor Corporation of India · data mirrored from NETRA-RAIL core
         </p>

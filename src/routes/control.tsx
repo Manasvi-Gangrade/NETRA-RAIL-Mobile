@@ -68,6 +68,20 @@ function ControlPage() {
         <PrecedenceFeed />
         <ThroughputChart />
         <OverridePanel />
+
+        <GlassCard className="flex items-center justify-between p-3.5">
+          <div>
+            <h3 className="text-[12.5px] font-bold text-foreground">Hands-Free Control Room Voice Co-Pilot</h3>
+            <p className="text-[10.5px] text-muted-foreground">Issue spoken overrides ("Hold 12951 at BRC Loop 2") in regional languages</p>
+          </div>
+          <PressButton 
+            tone="live" 
+            className="text-[11.5px] py-2 px-3 shrink-0"
+            onClick={() => alert("Voice Listener Activated. Listening for controller precedence command...")}
+          >
+            Voice Command
+          </PressButton>
+        </GlassCard>
       </div>
     </AppShell>
   );

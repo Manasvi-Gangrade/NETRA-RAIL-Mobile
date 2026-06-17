@@ -190,25 +190,15 @@ Prioritize building the Passenger and Station Master dashboards first in full an
 
 Make it fully responsive but mobile-first — this is a phone app experience, optimize all animations and layouts for a 375–430px viewport primarily
 
-Build this as a visually stunning, animation-rich, official-feeling national infrastructure app — something that would make a room of hackathon judges go quiet for a second before they start clapping., this is an assistive application to the original deployed project, isko refer kar lena and code wali cheeze bhi kar lena refer is repo se https://netra-rail.vercel.app/, https://github.com/Manasvi-Gangrade/NETRA-RAIL, bohot accha bohot sundar and same theme pr banana bhai please please please I trust you onto this and graphs, charts and sab kuch bohot acche acche diagrams and all daalna and bhaiii banana web hi but mobile responsive and please dont hit the lovable credit limits, I trust youuu
+Build this as a visually stunning, animation-rich, official-feeling national infrastructure app — something that would make a room of hackathon judges go quiet for a second before they start clapping., this is an assistive application to the original deployed project, isko refer kar lena and code wali cheeze bhi kar lena refer is repo se https://netra-rail.vercel.app/, https://github.com/Manasvi-Gangrade/NETRA-RAIL, bohot accha bohot sundar and same theme pr banana bhai please please please I trust you onto this and graphs, charts and sab kuch bohot acche acche diagrams and all daalna and bhaiii banana web hi but mobile responsive.
 
-This project was built with [Lovable](https://lovable.dev).
+## Development & Local Execution
 
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/d04f883c-f8b5-487a-a9b0-fff45ae8e9fa).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Prefer working locally? You need Node.js and npm:
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
+git clone https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile.git
+cd NETRA-RAIL-Mobile
 npm i
 npm run dev
 ```
