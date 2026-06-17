@@ -21,6 +21,7 @@ import {
   YAxis,
 } from "recharts";
 import { AppShell } from "@/components/netra/AppShell";
+import { NonDisruptiveCollaborationBanner } from "@/components/netra/LiveCollaborationStream";
 import {
   Chip,
   CountUp,
@@ -61,6 +62,9 @@ function PassengerHome() {
 
   return (
     <AppShell role="passenger" title="Your Journey" subtitle="12951 · Mumbai Rajdhani Express" boot>
+      <div className="mb-3">
+        <NonDisruptiveCollaborationBanner />
+      </div>
       <JourneyHero />
 
       <div className="mt-4 grid gap-3">

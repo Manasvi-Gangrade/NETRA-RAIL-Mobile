@@ -12,6 +12,7 @@ import {
   YAxis,
 } from "recharts";
 import { AppShell } from "@/components/netra/AppShell";
+import { NonDisruptiveCollaborationBanner } from "@/components/netra/LiveCollaborationStream";
 import {
   Chip,
   CountUp,
@@ -62,7 +63,8 @@ function ControlPage() {
       subtitle="BRC–ST corridor · single-line block active"
       boot
     >
-      <div className="space-y-6">
+      <div className="space-y-4">
+        <NonDisruptiveCollaborationBanner />
         <StatBar />
         <CriticalAlert />
         <PrecedenceFeed />

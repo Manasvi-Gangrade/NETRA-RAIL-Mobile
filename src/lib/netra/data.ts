@@ -15,26 +15,66 @@ import droneMissions from "../../../Datasets/pillar_d_drone_inspections.json";
 
 export { systemSummary };
 
+export interface VesselRow {
+  vessel_id?: string;
+  vessel_name?: string;
+  port_name?: string;
+  cargo_type?: string;
+  cargo_tonnage?: string;
+  berth_no?: string;
+  eta?: string;
+  discharge_progress_pct?: string;
+  discharge_status?: string;
+  allotted_rake_id?: string;
+  corridor_destination?: string;
+  ai_optimized_dispatch_window?: string;
+  demurrage_exposure_inr?: string;
+  demurrage_saved_inr?: string;
+}
+
+export interface TrafficRow {
+  train_id?: string;
+  train_type?: string;
+  corridor_section?: string;
+  assigned_loop_line?: string;
+  priority_class?: string;
+  precedence_override?: string;
+  loop_wait_time_minutes?: string;
+  jssp_solve_time_ms?: string;
+  current_speed_kmh?: string;
+  throughput_after_tph?: string;
+}
+
+export interface SensorRow {
+  sensor_id?: string;
+  track_section?: string;
+  vibration_magnitude?: string;
+  aknn_distance_to_baseline?: string;
+  gps_lat?: string;
+  gps_lon?: string;
+  is_anomaly?: string;
+}
+
 /** CSV Parsing Utility */
-function parseCSV(csvText: string): Record<string, string>[] {
+function parseCSV<T = Record<string, string>>(csvText: string): T[] {
   if (!csvText) return [];
   const lines = csvText.trim().split(/\r?\n/);
-  if (lines.length < 2) return [];
+  if (lines.length < 2 || !lines[0]) return [];
   const headers = lines[0].split(",").map((h) => h.trim());
   return lines.slice(1).map((line) => {
     const values = line.split(",").map((v) => v.trim());
-    const row: Record<string, string> = {};
+    const row: any = {};
     headers.forEach((h, idx) => {
       row[h] = values[idx] ?? "";
     });
-    return row;
+    return row as T;
   });
 }
 
 // Parsed Data Collections
-export const parsedVessels = parseCSV(vesselFreightCsv);
-export const parsedTraffic = parseCSV(trafficThroughputCsv);
-export const parsedSensors = parseCSV(imuSensorCsv);
+export const parsedVessels = parseCSV<VesselRow>(vesselFreightCsv);
+export const parsedTraffic = parseCSV<TrafficRow>(trafficThroughputCsv);
+export const parsedSensors = parseCSV<SensorRow>(imuSensorCsv);
 export const parsedDrones = droneMissions;
 
 export const systemMetrics = {
@@ -225,12 +265,12 @@ export const vesselFeed = parsedVessels.slice(0, 6).map((v) => {
 export const dispatchQueue = parsedVessels
   .filter((v) => v.allotted_rake_id && v.allotted_rake_id !== "None")
   .slice(0, 5)
-  .map((v) => {
+  .map((v, i) => {
     const exposure = Number(v.demurrage_exposure_inr) || 425000;
     const savingInr = Number(v.demurrage_saved_inr) || 310000;
     const risk = exposure > 500000 ? ("high" as const) : exposure > 250000 ? ("medium" as const) : ("low" as const);
     return {
-      id: v.allotted_rake_id,
+      id: v.allotted_rake_id || `RAKE-${401 + i}`,
       corridor: `${v.port_name} → ${(v.corridor_destination || "").split("-")[1] || "Plant Yard"}`,
       rake: `${v.cargo_type?.includes("Coal") ? "BOXNHL" : "BLCA"} · 58 wagons`,
       window: v.ai_optimized_dispatch_window || "21:40 – 22:10",

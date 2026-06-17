@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { AppShell } from "@/components/netra/AppShell";
+import { NonDisruptiveCollaborationBanner } from "@/components/netra/LiveCollaborationStream";
 import {
   Chip,
   GlassCard,
@@ -62,6 +63,7 @@ function FieldPage() {
       boot
     >
       <div className="space-y-4">
+        <NonDisruptiveCollaborationBanner />
         {/* GPS Location & Safety Lock */}
         <GlassCard glow className="relative overflow-hidden p-4">
           <ScanWipe />

@@ -13,6 +13,7 @@ import {
   YAxis,
 } from "recharts";
 import { AppShell } from "@/components/netra/AppShell";
+import { NonDisruptiveCollaborationBanner } from "@/components/netra/LiveCollaborationStream";
 import {
   Chip,
   CountUp,
@@ -63,7 +64,8 @@ function FreightPage() {
       subtitle="Port-to-plant corridor intelligence"
       boot
     >
-      <div className="space-y-6">
+      <div className="space-y-4">
+        <NonDisruptiveCollaborationBanner />
         <PortStrip />
         <div className="grid grid-cols-2 gap-2">
           {freightStats.map((s, i) => (
@@ -268,12 +270,15 @@ function DispatchQueue() {
             </p>
             <div className="mt-3 grid grid-cols-2 gap-2">
               <PressButton
-                tone={accepted.includes(d.id) ? "live" : "primary"}
-                onClick={() => setAccepted((a) => (a.includes(d.id) ? a : [...a, d.id]))}
+                tone={accepted.includes(d.id || "") ? "live" : "primary"}
+                onClick={() => {
+                  const id = d.id || "";
+                  setAccepted((a) => (a.includes(id) ? a : [...a, id]));
+                }}
                 className="py-2.5 text-[12px]"
               >
                 <Train className="h-3.5 w-3.5" />
-                {accepted.includes(d.id) ? "Slot confirmed" : "Accept slot"}
+                {accepted.includes(d.id || "") ? "Slot confirmed" : "Accept slot"}
               </PressButton>
               <PressButton tone="ghost" className="py-2.5 text-[12px]">
                 Request re-plan
