@@ -45,7 +45,7 @@
 
 ### Indore Institute of Science and Technology (IIST), Indore
 
-[![Team Photo](./images/github/Team.jpeg)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile)
+[![Team Photo](./Images/GitHub/Team.jpeg)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile)
 
 | Team Lead & AI Architecture | Backend & Agent Orchestration | Data & Spatial Analytics | Frontend & Design Systems |
 | :---: | :---: | :---: | :---: |
@@ -61,16 +61,16 @@
 
 | NETRA-RAIL Live Mobile Platform | Mobile System Detailed Documentation | Team Japan Buddies Roster |
 | :---: | :---: | :---: |
-| [![Mobile App](./images/github/Mobile%20App.png)](https://netra-rail-mobile.vercel.app/) | [![Mobile Doc](./images/github/Mobile%20Doc.jpeg)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing) | [![Team Photo](./images/github/Team.jpeg)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile) |
+| [![Mobile App](./Images/GitHub/Mobile%20App.png)](https://netra-rail-mobile.vercel.app/) | [![Mobile Doc](./Images/GitHub/Mobile%20Doc.jpeg)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing) | [![Team Photo](./Images/GitHub/Team.jpeg)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile) |
 | [![Launch Mobile](https://img.shields.io/badge/Launch-Mobile%20App-10B981?style=for-the-badge&logo=vercel)](https://netra-rail-mobile.vercel.app/) | [![View Doc](https://img.shields.io/badge/View-Mobile%20Docs-34A853?style=for-the-badge&logo=google-drive)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing) | [![Team Repository](https://img.shields.io/badge/GitHub-Mobile%20Repo-181717?style=for-the-badge&logo=github)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile) |
 
 | Web Command Platform | FastAPI Interactive API Specs | Published Research Paper |
 | :---: | :---: | :---: |
-| [![Web Platform](./images/github/Web%20Platform.png)](https://netra-rail.vercel.app/) | [![API Docs](./images/github/API%20Documentation.png)](https://netra-rail-backend.onrender.com/docs) | [![Research](./images/github/Research.png)](https://www.researchgate.net/publication/412909876_NETRA-RAIL_National_Enterprise_Traffic_Routing_Autonomous_Rail-Grid) |
+| [![Web Platform](./Images/GitHub/Web%20Platform.png)](https://netra-rail.vercel.app/) | [![API Docs](./Images/GitHub/API%20Documentation.png)](https://netra-rail-backend.onrender.com/docs) | [![Research](./Images/GitHub/Research.png)](https://www.researchgate.net/publication/412909876_NETRA-RAIL_National_Enterprise_Traffic_Routing_Autonomous_Rail-Grid) |
 
 | Technical System Report | System Datasets & Matrix | Presentation & Walkthrough |
 | :---: | :---: | :---: |
-| [![Technical Report](./images/github/Technical%20Report.jpeg)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing) | [![Datasets](./images/github/Datasets.jpeg)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile) | [![Presentation](./images/github/Presentation.png)](https://drive.google.com/file/d/1NMADT7SHeiZWvHsdfXJ0bxiMMUkG7TT0/view?usp=sharing) |
+| [![Technical Report](./Images/GitHub/Technical%20Report.jpeg)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing) | [![Datasets](./Images/GitHub/Datasets.jpeg)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile) | [![Presentation](./Images/GitHub/Presentation.png)](https://drive.google.com/file/d/1NMADT7SHeiZWvHsdfXJ0bxiMMUkG7TT0/view?usp=sharing) |
 
 </div>
 
