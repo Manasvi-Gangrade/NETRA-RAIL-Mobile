@@ -1,30 +1,15 @@
 <div align="center">
 
-![Team Badge](https://img.shields.io/badge/Team%20Japan%20Buddies-Far%20Away%20Hackathon%202026%20%7C%20Theme%3A%20Railways-1a3a5c?style=for-the-badge&logo=github)
-
-### Team Roster — Indore Institute of Science and Technology (IIST), Indore
-
-| Team Lead & AI Architecture | Backend & Agent Orchestration | Data & Spatial Analytics | Frontend & Design Systems |
-| :---: | :---: | :---: | :---: |
-| **Manasvi Gangrade** | **Navneet Kaur** | **Suhani Sharma** | **Muskan Lodhi** |
-
----
-
 # NETRA-RAIL MOBILE
 ### The Human Interface Layer
 **A Role-Adaptive, Multi-Stakeholder Mobile Companion to Autonomous Rail Intelligence**
 
----
-
+[![Far Away Hackathon](https://img.shields.io/badge/Far%20Away%20Hackathon%202026-Theme%3A%20Railways-1a3a5c?style=for-the-badge)](https://unstop.com)
 [![Mobile Deployment](https://img.shields.io/badge/Vercel-Live%20Mobile%20App-10B981?style=for-the-badge&logo=vercel&logoColor=white)](https://netra-rail-mobile.vercel.app/)
 [![Mobile GitHub Repo](https://img.shields.io/badge/GitHub-Mobile%20Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile)
 [![Mobile Documentation](https://img.shields.io/badge/Google%20Drive-Mobile%20System%20Docs-34A853?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing)
 [![Research Paper](https://img.shields.io/badge/ResearchGate-Research%20Paper-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white)](https://www.researchgate.net/publication/412909876_NETRA-RAIL_National_Enterprise_Traffic_Routing_Autonomous_Rail-Grid)
 [![Backend API Docs](https://img.shields.io/badge/FastAPI-Live%20API%20Docs-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://netra-rail-backend.onrender.com/docs)
-
-[![Far Away Hackathon](https://img.shields.io/badge/Far%20Away%20Hackathon%202026-Theme%3A%20Railways-1a3a5c?style=for-the-badge)](https://unstop.com)
-[![Architecture](https://img.shields.io/badge/Architecture-1%20Binary%20%7C%204%20Dynamic%20Roles-7C3AED?style=for-the-badge)]()
-[![Status](https://img.shields.io/badge/Status-Production%20Ready-10B981?style=for-the-badge)]()
 [![Languages](https://img.shields.io/badge/Languages%20Supported-230%2B-F59E0B?style=for-the-badge)]()
 
 </div>
@@ -39,11 +24,10 @@
 
 ---
 
-![Team Header](https://img.shields.io/badge/Team%20Japan%20Buddies%20--%20Far%20Away%20Hackathon%202026-1a3a5c?style=for-the-badge&logo=github)
+## 👥 Team Japan Buddies
+**Indore Institute of Science and Technology (IIST), Indore**
 
 <div align="center">
-
-### Indore Institute of Science and Technology (IIST), Indore
 
 [![Team Photo](./Images/GitHub/Team.jpeg)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile)
 
@@ -55,28 +39,27 @@
 
 ---
 
-![Media Header](https://img.shields.io/badge/Mobile%20Platform%20%26%20Visual%20Screenshots%20Gallery-10B981?style=for-the-badge)
+## 📸 Visual Screenshots & Deliverables Gallery
 
 <div align="center">
 
-| NETRA-RAIL Live Mobile Platform | Mobile System Detailed Documentation | Team Japan Buddies Roster |
+| NETRA-RAIL Live Mobile Platform | Mobile System Detailed Documentation | Web Command Platform |
 | :---: | :---: | :---: |
-| [![Mobile App](./Images/GitHub/Mobile%20App.png)](https://netra-rail-mobile.vercel.app/) | [![Mobile Doc](./Images/GitHub/Mobile%20Doc.jpeg)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing) | [![Team Photo](./Images/GitHub/Team.jpeg)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile) |
-| [![Launch Mobile](https://img.shields.io/badge/Launch-Mobile%20App-10B981?style=for-the-badge&logo=vercel)](https://netra-rail-mobile.vercel.app/) | [![View Doc](https://img.shields.io/badge/View-Mobile%20Docs-34A853?style=for-the-badge&logo=google-drive)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing) | [![Team Repository](https://img.shields.io/badge/GitHub-Mobile%20Repo-181717?style=for-the-badge&logo=github)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile) |
+| [![Mobile App](./Images/GitHub/Mobile%20App.png)](https://netra-rail-mobile.vercel.app/) | [![Mobile Doc](./Images/GitHub/Mobile%20Doc.jpeg)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing) | [![Web Platform](./Images/GitHub/Web%20Platform.png)](https://netra-rail.vercel.app/) |
 
-| Web Command Platform | FastAPI Interactive API Specs | Published Research Paper |
+| FastAPI Interactive API Specs | Published Research Paper | Technical System Report |
 | :---: | :---: | :---: |
-| [![Web Platform](./Images/GitHub/Web%20Platform.png)](https://netra-rail.vercel.app/) | [![API Docs](./Images/GitHub/API%20Documentation.png)](https://netra-rail-backend.onrender.com/docs) | [![Research](./Images/GitHub/Research.png)](https://www.researchgate.net/publication/412909876_NETRA-RAIL_National_Enterprise_Traffic_Routing_Autonomous_Rail-Grid) |
+| [![API Docs](./Images/GitHub/API%20Documentation.png)](https://netra-rail-backend.onrender.com/docs) | [![Research](./Images/GitHub/Research.png)](https://www.researchgate.net/publication/412909876_NETRA-RAIL_National_Enterprise_Traffic_Routing_Autonomous_Rail-Grid) | [![Technical Report](./Images/GitHub/Technical%20Report.jpeg)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing) |
 
-| Technical System Report | System Datasets & Matrix | Presentation & Walkthrough |
-| :---: | :---: | :---: |
-| [![Technical Report](./Images/GitHub/Technical%20Report.jpeg)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing) | [![Datasets](./Images/GitHub/Datasets.jpeg)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile) | [![Presentation](./Images/GitHub/Presentation.png)](https://drive.google.com/file/d/1NMADT7SHeiZWvHsdfXJ0bxiMMUkG7TT0/view?usp=sharing) |
+| System Datasets & Matrix | Presentation & Walkthrough |
+| :---: | :---: |
+| [![Datasets](./Images/GitHub/Datasets.jpeg)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile) | [![Presentation](./Images/GitHub/Presentation.png)](https://drive.google.com/file/d/1NMADT7SHeiZWvHsdfXJ0bxiMMUkG7TT0/view?usp=sharing) |
 
 </div>
 
 ---
 
-![Links Header](https://img.shields.io/badge/Mobile%20Deliverables%20%26%20Official%20Links%20Matrix-10B981?style=for-the-badge)
+## 🔗 Official Links & Resources
 
 | Category | Mobile Deliverable Resource | Direct Link |
 | :--- | :--- | :--- |
@@ -93,29 +76,27 @@
 
 ---
 
-![TOC Header](https://img.shields.io/badge/Table%20of%20Contents-7C3AED?style=for-the-badge)
+## 📋 Table of Contents
 
-- [Introduction — The Human Interface Layer](#1-introduction--the-human-interface-layer)
-- [Background & Motivation](#2-background--motivation)
-- [Problem Statement — The Missing Fifth Layer](#3-problem-statement--the-missing-fifth-layer)
-- [Proposed Solution — Role-Adaptive Architecture](#4-proposed-solution--the-role-adaptive-application-architecture)
-  - [Unified Gateway & Role Detection](#41-unified-gateway--login--role-detection)
-  - [Role A: Passenger (Human Sensor & Beneficiary)](#42-role-a--passenger-the-human-sensor--beneficiary)
-  - [Role B: Freight & Logistics Coordinator](#43-role-b--freight--logistics-coordinator-the-supply-chain-cockpit)
-  - [Role C: Station Master & Controller](#44-role-c--station-master--traffic-controller-the-precedence-co-pilot)
-  - [Role D: Trackman & Maintenance Crew](#45-role-d--trackman--maintenance-crew-the-field-verification-layer)
-- [The Common Foundation Layer](#5-the-common-layer--what-every-role-shares)
-- [The Human Flywheel Loop](#6-the-human-flywheel--how-the-app-closes-the-loop)
-- [UX & Design Philosophy](#7-ux--design-philosophy)
-- [Technology Stack](#8-technology-stack)
-- [Security, Privacy & Trust](#9-security-privacy--trust)
-- [Impact & Real-World Applicability](#10-impact--real-world-applicability)
-- [Future Roadmap](#11-future-roadmap)
-- [Conclusion](#12-conclusion)
+- [1. Introduction — The Human Interface Layer](#1-introduction--the-human-interface-layer)
+- [2. Background & Motivation](#2-background--motivation)
+- [3. Problem Statement — The Missing Fifth Layer](#3-problem-statement--the-missing-fifth-layer)
+- [4. Proposed Solution — Role-Adaptive Architecture](#4-proposed-solution--role-adaptive-architecture)
+  - [4.1 Unified Gateway & Role Detection](#41-unified-gateway--role-detection)
+  - [4.2 Role A: Passenger (Human Sensor & Beneficiary)](#42-role-a-passenger-human-sensor--beneficiary)
+  - [4.3 Role B: Freight & Logistics Coordinator](#43-role-b-freight--logistics-coordinator)
+  - [4.4 Role C: Station Master & Controller](#44-role-c-station-master--controller)
+  - [4.5 Role D: Trackman & Maintenance Crew](#45-role-d-trackman--maintenance-crew)
+- [5. The Common Foundation Layer](#5-the-common-foundation-layer)
+- [6. The Human Flywheel Loop](#6-the-human-flywheel-loop)
+- [7. Technology Stack](#7-technology-stack)
+- [8. Security, Privacy & Trust](#8-security-privacy--trust)
+- [9. Future Roadmap](#9-future-roadmap)
+- [10. Conclusion](#10-conclusion)
 
 ---
 
-![Intro Header](https://img.shields.io/badge/1.%20Introduction%20--%20The%20Human%20Interface%20Layer-10B981?style=for-the-badge)
+## 1. Introduction — The Human Interface Layer
 
 No autonomous system, however intelligent, can afford to operate as a black box in a domain where human lives, national infrastructure, and enormous economic value are simultaneously at stake.
 
@@ -131,7 +112,7 @@ The **NETRA-RAIL** core platform is a closed-loop cyber-physical brain — four 
 
 ---
 
-![Background Header](https://img.shields.io/badge/2.%20Background%20%26%20Motivation-1a3a5c?style=for-the-badge)
+## 2. Background & Motivation
 
 Today, every layer of Indian Railways' workforce and ridership interacts with the system through fragmented, analogue, or low-fidelity channels:
 
@@ -144,7 +125,7 @@ Today, every layer of Indian Railways' workforce and ridership interacts with th
 
 ---
 
-![Problem Header](https://img.shields.io/badge/3.%20Problem%20Statement%20--%20The%20Missing%20Fifth%20Layer-DC2626?style=for-the-badge)
+## 3. Problem Statement — The Missing Fifth Layer
 
 While the core NETRA-RAIL platform addresses four formal Smart India Hackathon problem statements (SIH25209, SIH25022, SIH25177, SIH25021), a fifth unstated problem undermines real-world deployment:
 
@@ -164,7 +145,7 @@ While the core NETRA-RAIL platform addresses four formal Smart India Hackathon p
 
 ---
 
-![Architecture Header](https://img.shields.io/badge/4.%20Proposed%20Solution%20--%20Role--Adaptive%20Architecture-1a3a5c?style=for-the-badge)
+## 4. Proposed Solution — Role-Adaptive Architecture
 
 NETRA-RAIL MOBILE is architected as a **single application binary** with a unified authentication gateway. At login, the app dynamically detects the user's role and reshapes its navigation, permission matrix, and visual interface around that stakeholder.
 
@@ -176,7 +157,7 @@ NETRA-RAIL MOBILE is architected as a **single application binary** with a unifi
 
 ---
 
-![RoleA Header](https://img.shields.io/badge/4.2%20Role%20A%20--%20Passenger%20(Human%20Sensor%20%26%20Beneficiary)-10B981?style=for-the-badge)
+### 4.2 Role A: Passenger (Human Sensor & Beneficiary)
 
 Transforms every passenger into both a beneficiary of real-time operational transparency and a literal sensor node powering Pillar C's crowdsourced track monitoring.
 
@@ -197,7 +178,7 @@ Transforms every passenger into both a beneficiary of real-time operational tran
 
 ---
 
-![RoleB Header](https://img.shields.io/badge/4.3%20Role%20B%20--%20Freight%20%26%20Logistics%20Coordinator-F59E0B?style=for-the-badge)
+### 4.3 Role B: Freight & Logistics Coordinator
 
 Serves as a pocket supply-chain cockpit for Pillar A's intermodal freight synchronisation engine.
 
@@ -207,7 +188,7 @@ Serves as a pocket supply-chain cockpit for Pillar A's intermodal freight synchr
 
 ---
 
-![RoleC Header](https://img.shields.io/badge/4.4%20Role%20C%20--%20Station%20Master%20%26%20Controller-7C3AED?style=for-the-badge)
+### 4.4 Role C: Station Master & Controller
 
 Acts as an explainable precedence co-pilot for Pillar B's real-time JSSP section throughput optimizer.
 
@@ -217,7 +198,7 @@ Acts as an explainable precedence co-pilot for Pillar B's real-time JSSP section
 
 ---
 
-![RoleD Header](https://img.shields.io/badge/4.5%20Role%20D%20--%20Trackman%20%26%20Maintenance%20Crew-10B981?style=for-the-badge)
+### 4.5 Role D: Trackman & Maintenance Crew
 
 Engineered specifically for field conditions — bright sunlight, gloved operation, rain, and low connectivity.
 
@@ -227,7 +208,7 @@ Engineered specifically for field conditions — bright sunlight, gloved operati
 
 ---
 
-![Common Header](https://img.shields.io/badge/5.%20The%20Common%20Foundation%20Layer-1a3a5c?style=for-the-badge)
+## 5. The Common Foundation Layer
 
 - **230+ Languages & Voice AI:** Powered by **IndicTrans2** and BCP-47 TTS locale mapping across every screen and role.
 - **Live Flywheel Pulse Widget:** A compact, always-visible status indicator showing the connected 4-pillar health.
@@ -236,7 +217,7 @@ Engineered specifically for field conditions — bright sunlight, gloved operati
 
 ---
 
-![Flywheel Header](https://img.shields.io/badge/6.%20The%20Human%20Flywheel%20Loop-F59E0B?style=for-the-badge)
+## 6. The Human Flywheel Loop
 
 ```
 [Passenger App] Opts in to Track Safety -> IMU telemetry streams to Pillar C
@@ -264,7 +245,7 @@ Crew resolves defect on-site -> Taps "Mark Resolved"
 
 ---
 
-![Tech Stack Header](https://img.shields.io/badge/8.%20Technology%20Stack-1a3a5c?style=for-the-badge)
+## 7. Technology Stack
 
 | Component | Technology / Library |
 | :--- | :--- |
@@ -279,7 +260,7 @@ Crew resolves defect on-site -> Taps "Mark Resolved"
 
 ---
 
-![Security Header](https://img.shields.io/badge/9.%20Security%2C%20Privacy%20%26%20Trust-DC2626?style=for-the-badge)
+## 8. Security, Privacy & Trust
 
 - **Anonymised Telemetry:** Passenger IMU sensor data is scrubbed of device identifiers before vector ingestion.
 - **Strict Opt-In:** Background sensing is 100% voluntary, pausable, and deletable.
@@ -288,7 +269,7 @@ Crew resolves defect on-site -> Taps "Mark Resolved"
 
 ---
 
-![Roadmap Header](https://img.shields.io/badge/11.%20Future%20Roadmap-7C3AED?style=for-the-badge)
+## 9. Future Roadmap
 
 - **Phase 1 (Current MVP):** Interactive passenger role with simulated IMU contribution, live flywheel pulse widget, and unified 4-role login gateway.
 - **Phase 2 (Delhi Round):** Live push notifications connected to core Pillar B/C/D events; offline-first trackman sync verified in low-signal zones.
@@ -296,7 +277,7 @@ Crew resolves defect on-site -> Taps "Mark Resolved"
 
 ---
 
-![Conclusion Header](https://img.shields.io/badge/12.%20Conclusion-10B981?style=for-the-badge)
+## 10. Conclusion
 
 An autonomous system is only as strong as the trust humans place in it. NETRA-RAIL's four pillars solve the hardest computational problems in rail logistics and traffic — but computation alone does not move a controller to accept an AI override or reassure a passenger during a delay.
 
@@ -305,10 +286,6 @@ An autonomous system is only as strong as the trust humans place in it. NETRA-RA
 ---
 
 <div align="center">
-
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=F59E0B&center=true&vCenter=true&width=600&lines=NETRA-RAIL+MOBILE+%7C+Far+Away+Hackathon+2026;Theme%3A+Railways+%7C+Build+Boldly.+Ship+Something+Real.;Top+5+%E2%86%92+Fully+Sponsored+Japan+Trip)
-
-[![Star](https://img.shields.io/github/stars/Manasvi-Gangrade/NETRA-RAIL-Mobile?style=social)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile)
 
 *Developed by Team Japan Buddies for Indian Railways*
 
