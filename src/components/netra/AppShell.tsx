@@ -1,11 +1,12 @@
 import { Link, useNavigate, useRouterState } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "motion/react";
-import { Bell, Globe, Home, IdCard, LogOut, ShieldCheck, Lock, Train } from "lucide-react";
+import { Bell, Globe, Home, IdCard, LogOut, Lock, Train, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
-import { LANGUAGES, ROLES, notifications, type Role } from "@/lib/netra/data";
+import { ROLES, notifications, type Role } from "@/lib/netra/data";
 import { clearSession, useSession, writeSession } from "@/lib/netra/session";
 import { Emblem, ScanWipe, TricolourRule } from "@/components/netra/primitives";
 import { cn } from "@/lib/utils";
+import { GoogleTranslateWidget, useTTS } from "@/components/netra/LanguageAndTTS";
 
 const NAV = [
   { to: "/alerts", label: "Alerts", icon: Bell },
@@ -32,6 +33,7 @@ export function AppShell({
   const [langOpen, setLangOpen] = useState(false);
   const [lang, setLang] = useState("en");
   const [configuring, setConfiguring] = useState(boot);
+  const { ttsEnabled, setTtsEnabled } = useTTS();
 
   useEffect(() => {
     if (ready && !session) navigate({ to: "/" });
@@ -66,24 +68,57 @@ export function AppShell({
             </div>
             <div className="flex shrink-0 items-center gap-1.5">
               <button
-                onClick={() => setLangOpen(true)}
-                aria-label="Change language"
-                className="press grid h-10 w-10 place-items-center rounded-xl border border-hairline bg-surface"
+                onClick={() => setTtsEnabled(!ttsEnabled)}
+                aria-label="Toggle hover voice"
+                title={ttsEnabled ? "Hover Voice ON" : "Hover Voice OFF"}
+                className={cn(
+                  "press grid h-9 w-9 place-items-center rounded-xl border transition-colors",
+                  ttsEnabled
+                    ? "border-live/40 bg-live/10 text-live"
+                    : "border-hairline bg-surface text-muted-foreground"
+                )}
               >
-                <Globe className="h-4.5 w-4.5 text-cyan" />
+                {ttsEnabled ? <Volume2 className="h-4 w-4" /> : <VolumeX className="h-4 w-4" />}
               </button>
+
+              <button
+                onClick={() => setLangOpen(!langOpen)}
+                aria-label="Change language"
+                title="Change App Language"
+                className={cn(
+                  "press grid h-9 w-9 place-items-center rounded-xl border transition-colors",
+                  langOpen
+                    ? "border-cyan bg-cyan/15 text-cyan"
+                    : "border-hairline bg-surface text-cyan"
+                )}
+              >
+                <Globe className="h-4 w-4" />
+              </button>
+
               <Link
                 to="/alerts"
                 aria-label="Notifications"
-                className="press relative grid h-10 w-10 place-items-center rounded-xl border border-hairline bg-surface"
+                className="press relative grid h-9 w-9 place-items-center rounded-xl border border-hairline bg-surface"
               >
-                <Bell className="h-4.5 w-4.5" />
+                <Bell className="h-4 w-4 text-foreground" />
                 {critical > 0 && (
-                  <span className="absolute -right-0.5 -top-0.5 grid h-4 w-4 place-items-center rounded-full bg-critical text-[9px] font-bold text-foreground">
+                  <span className="absolute -right-0.5 -top-0.5 grid h-3.5 w-3.5 place-items-center rounded-full bg-critical text-[8px] font-bold text-foreground">
                     {critical}
                   </span>
                 )}
               </Link>
+
+              <button
+                onClick={() => {
+                  clearSession();
+                  navigate({ to: "/" });
+                }}
+                aria-label="Sign out"
+                title="Sign out of system"
+                className="press grid h-9 w-9 place-items-center rounded-xl border border-hairline bg-surface text-muted-foreground hover:text-foreground"
+              >
+                <LogOut className="h-4 w-4" />
+              </button>
             </div>
           </div>
         </div>
@@ -177,64 +212,21 @@ export function AppShell({
 
       <AnimatePresence>
         {langOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setLangOpen(false)}
-            className="fixed inset-0 z-50 flex items-end bg-background/70 backdrop-blur-sm"
-          >
+          <>
+            <div
+              onClick={() => setLangOpen(false)}
+              className="fixed inset-0 z-40 bg-black/40 backdrop-blur-[2px]"
+            />
             <motion.div
-              initial={{ y: 260 }}
-              animate={{ y: 0 }}
-              exit={{ y: 260 }}
-              transition={{ type: "spring", stiffness: 320, damping: 32 }}
-              onClick={(e) => e.stopPropagation()}
-              className="glass mx-auto max-h-[85vh] overflow-y-auto w-full max-w-[520px] rounded-t-3xl p-5 pb-[max(1.25rem,env(safe-area-inset-bottom,0px))]"
+              initial={{ opacity: 0, scale: 0.95, y: -6 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: -6 }}
+              transition={{ duration: 0.16, ease: "easeOut" }}
+              className="absolute right-12 top-[52px] z-50 w-72 rounded-2xl border border-cyan/40 bg-[#0b1329]/95 p-3.5 shadow-2xl backdrop-blur-xl"
             >
-              <TricolourRule className="mb-4 w-16 rounded-full" />
-              <h3 className="text-sm font-semibold">Language & Voice</h3>
-              <p className="mt-1 text-[11px] text-muted-foreground">
-                230+ Indian languages and dialects supported. Voice assistant follows your choice.
-              </p>
-              <div className="mt-4 grid grid-cols-2 gap-2">
-                {LANGUAGES.map((l) => (
-                  <button
-                    key={l.code}
-                    onClick={() => {
-                      setLang(l.code);
-                      if (session) writeSession({ ...session, lang: l.code });
-                      setTimeout(() => setLangOpen(false), 180);
-                    }}
-                    className={cn(
-                      "press min-h-[44px] rounded-xl border px-3 py-2 text-left",
-                      lang === l.code
-                        ? "border-cyan/60 bg-surface-2"
-                        : "border-hairline bg-surface",
-                    )}
-                  >
-                    <p className="text-[13px] font-semibold">{l.native}</p>
-                    <p className="text-[10px] text-muted-foreground">{l.label}</p>
-                  </button>
-                ))}
-              </div>
-              <div className="mt-4 flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-hairline">
-                <span className="inline-flex items-center gap-1 text-[10px] text-muted-foreground">
-                  <ShieldCheck className="h-3 w-3 text-india-green" /> Ministry of Railways ·
-                  Govt of India
-                </span>
-                <button
-                  onClick={() => {
-                    clearSession();
-                    navigate({ to: "/" });
-                  }}
-                  className="press min-h-[36px] inline-flex items-center gap-1 rounded-lg border border-hairline px-3 py-1.5 text-[11px] font-medium"
-                >
-                  <LogOut className="h-3.5 w-3.5" /> Sign out
-                </button>
-              </div>
+              <GoogleTranslateWidget />
             </motion.div>
-          </motion.div>
+          </>
         )}
       </AnimatePresence>
     </div>

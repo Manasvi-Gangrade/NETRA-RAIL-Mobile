@@ -3,7 +3,14 @@ import type { Role } from "./data";
 
 const KEY = "netra.session";
 
-export type Session = { role: Role; name: string; id: string; lang: string };
+export type Session = {
+  role: Role;
+  name: string;
+  id: string;
+  lang: string;
+  designation?: string;
+  employeeId?: string;
+};
 
 export function readSession(): Session | null {
   if (typeof window === "undefined") return null;

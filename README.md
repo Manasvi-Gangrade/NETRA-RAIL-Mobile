@@ -1,204 +1,307 @@
-# NETRA Companion
+<div align="center">
 
-bhai sun na how are you I need your help, i want you to be with me through this project and build everything, THE BRIEF
+![Team Badge](https://img.shields.io/badge/Team%20Japan%20Buddies-Far%20Away%20Hackathon%202026%20%7C%20Theme%3A%20Railways-1a3a5c?style=for-the-badge&logo=github)
 
-Build NETRA-RAIL MOBILE, the official companion app for NETRA-RAIL — India's autonomous multi-agent railway intelligence platform (National Enterprise Traffic, Routing & Autonomous Rail-Grid). This is a role-adaptive mobile web app with FOUR distinct logins — Passenger, Freight & Logistics Coordinator, Station Master / Traffic Controller, and Trackman / Maintenance Crew — each unlocking a completely different dashboard, but all sharing one consistent design system.
+### Team Roster — Indore Institute of Science and Technology (IIST), Indore
 
-This app is the human-facing counterpart to our already-deployed web command center (netra-rail.vercel.app), which has a dark, cinematic, futuristic-AI-ops aesthetic — live stats, glowing accent lines, hero video, flywheel visualizations. Carry that same DNA into this app — but because this app will be used by everyday citizens, port officials, station masters and field workers (not just engineers), blend it with the trust, gravity, and structure of an official Government of India digital service (think DigiLocker, UMANG, IRCTC, Aadhaar apps) — clean official headers, verified badges, tricolour accent restraint, formal typography, seals of authenticity — but rendered in a premium, modern, animation-rich way, NOT a clunky old government portal.
+| Team Lead & AI Architecture | Backend & Agent Orchestration | Data & Spatial Analytics | Frontend & Design Systems |
+| :---: | :---: | :---: | :---: |
+| **Manasvi Gangrade** | **Navneet Kaur** | **Suhani Sharma** | **Muskan Lodhi** |
 
-The result should feel like: "what if ISRO/DRDO built a beautiful, cinematic control app for a national rail AI system." Serious, official, trustworthy — but alive, animated, and futuristic.
+---
 
-1. VISUAL IDENTITY & DESIGN LANGUAGE
+# NETRA-RAIL MOBILE
+### The Human Interface Layer
+**A Role-Adaptive, Multi-Stakeholder Mobile Companion to Autonomous Rail Intelligence**
 
-Overall mood: Dark-mode-first "mission control" base layer (matching the deployed web command center) with light, official "citizen service" surfaces layered on top for passenger-facing screens. Think: NASA JPL mission control meets Digital India portal meets a premium fintech app.
+---
 
-Color system:
+[![Mobile Deployment](https://img.shields.io/badge/Vercel-Live%20Mobile%20App-10B981?style=for-the-badge&logo=vercel&logoColor=white)](https://netra-rail-mobile.vercel.app/)
+[![Mobile GitHub Repo](https://img.shields.io/badge/GitHub-Mobile%20Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile)
+[![Mobile Documentation](https://img.shields.io/badge/Google%20Drive-Mobile%20System%20Docs-34A853?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing)
+[![Research Paper](https://img.shields.io/badge/ResearchGate-Research%20Paper-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white)](https://www.researchgate.net/publication/412909876_NETRA-RAIL_National_Enterprise_Traffic_Routing_Autonomous_Rail-Grid)
+[![Backend API Docs](https://img.shields.io/badge/FastAPI-Live%20API%20Docs-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://netra-rail-backend.onrender.com/docs)
 
-Primary background: deep navy-charcoal (#0B1220 to #0F1A2B gradient), not pure black — should feel like a night-time control room
+[![Far Away Hackathon](https://img.shields.io/badge/Far%20Away%20Hackathon%202026-Theme%3A%20Railways-1a3a5c?style=for-the-badge)](https://unstop.com)
+[![Architecture](https://img.shields.io/badge/Architecture-1%20Binary%20%7C%204%20Dynamic%20Roles-7C3AED?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-Production%20Ready-10B981?style=for-the-badge)]()
+[![Languages](https://img.shields.io/badge/Languages%20Supported-230%2B-F59E0B?style=for-the-badge)]()
 
-Accent primary: electric blue (#2E75B6 → #4FC3F7 glow gradient) — used for active states, live data, pulsing indicators
+</div>
 
-Accent secondary (official/trust layer): deep saffron (#FF9933) and India-flag green (#138808) used SPARINGLY as thin accent lines, verified badges, and status chips — never as large fills, to keep it tasteful and official rather than loud
+---
 
-Success/live: emerald green with soft glow
+<div align="center">
 
-Warning/slow-zone: amber with pulsing animation
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=1a3a5c&center=true&vCenter=true&width=750&lines=1+Binary+%E2%86%92+4+Adaptive+Roles;Commuters+%7C+Coordinators+%7C+Controllers+%7C+Trackmen;Put+a+Human+at+the+Center+of+Autonomous+Rail;Offline-First+%7C+230%2B+Languages+%7C+Voice-First)
 
-Critical/alert: signal red with sharp pulse
+</div>
 
-Card surfaces: frosted glass / subtle glassmorphism panels (rgba(255,255,255,0.04) with backdrop-blur) floating on the navy background, thin 1px glowing borders
+---
 
-Light-mode override for passenger onboarding/KYC-style screens: white/off-white with navy header bar, mimicking official govt-portal trust cues
+![Team Header](https://img.shields.io/badge/Team%20Japan%20Buddies%20--%20Far%20Away%20Hackathon%202026-1a3a5c?style=for-the-badge&logo=github)
 
-Typography:
+<div align="center">
 
-Headlines: a strong, geometric sans (e.g., "Space Grotesk" or "Sora") for that futuristic-control-room feel
+### Indore Institute of Science and Technology (IIST), Indore
 
-Body/UI text: highly legible sans (e.g., "Inter" or "Noto Sans" — Noto Sans specifically because it must render Devanagari, Tamil, Bengali, Gujarati, Odia, Telugu, Kannada, Urdu scripts cleanly for the 230+ language layer)
+[![Team Photo](./Images/GitHub/Team.jpeg)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile)
 
-Numbers/data (ETAs, coordinates, IDs): tabular/monospace accent font for that "live telemetry" feel
+| Team Lead & AI Architecture | Backend & Agent Orchestration | Data & Spatial Analytics | Frontend & Design Systems |
+| :---: | :---: | :---: | :---: |
+| **Manasvi Gangrade** | **Navneet Kaur** | **Suhani Sharma** | **Muskan Lodhi** |
 
-Official government texture (use tastefully, not kitschy):
+</div>
 
-Top status bar on every screen: thin tricolour hairline (saffron–white–green, 2px) directly under the status bar, like an official seal of the app
+---
 
-A small "Ministry of Railways · Government of India Initiative" micro-label in the splash/login screen footer
+![Media Header](https://img.shields.io/badge/Mobile%20Platform%20%26%20Visual%20Screenshots%20Gallery-10B981?style=for-the-badge)
 
-"Verified" / "Government Certified Data Source" badges (small shield-check icon) next to live data feeds, to build public trust
+<div align="center">
 
-Official-feeling formal language in headers ("NETRA-RAIL National Rail Intelligence Network") paired with modern conversational microcopy in body text
+| NETRA-RAIL Live Mobile Platform | Mobile System Detailed Documentation | Team Japan Buddies Roster |
+| :---: | :---: | :---: |
+| [![Mobile App](./Images/GitHub/Mobile%20App.png)](https://netra-rail-mobile.vercel.app/) | [![Mobile Doc](./Images/GitHub/Mobile%20Doc.jpeg)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing) | [![Team Photo](./Images/GitHub/Team.jpeg)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile) |
+| [![Launch Mobile](https://img.shields.io/badge/Launch-Mobile%20App-10B981?style=for-the-badge&logo=vercel)](https://netra-rail-mobile.vercel.app/) | [![View Doc](https://img.shields.io/badge/View-Mobile%20Docs-34A853?style=for-the-badge&logo=google-drive)](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing) | [![Team Repository](https://img.shields.io/badge/GitHub-Mobile%20Repo-181717?style=for-the-badge&logo=github)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile) |
 
-Emblem-style circular badge/logo mark for NETRA-RAIL (an eye/radar motif — "Netra" means "eye") used as a loading spinner and splash icon
+</div>
 
-2. ANIMATION & MOTION LANGUAGE — GO ALL OUT HERE
+---
 
-This is the single most important differentiator. Every screen should feel alive, like it's plugged into a real-time national network:
+![Links Header](https://img.shields.io/badge/Mobile%20Deliverables%20%26%20Official%20Links%20Matrix-10B981?style=for-the-badge)
 
-Splash/Boot sequence: app opens with a radar-sweep animation on the NETRA-RAIL eye/emblem, concentric pulse rings expanding outward, then resolves into the login screen — like a system "coming online"
+| Category | Mobile Deliverable Resource | Direct Link |
+| :--- | :--- | :--- |
+| **Mobile Web App** | **Live Deployed Mobile Application** | [netra-rail-mobile.vercel.app](https://netra-rail-mobile.vercel.app/) |
+| **Mobile Codebase** | **NETRA-RAIL Mobile GitHub Repository** | [GitHub: NETRA-RAIL-Mobile](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile) |
+| **Mobile System Docs** | **NETRA-RAIL Mobile Detailed Documentation** | [Download PDF / View Drive](https://drive.google.com/file/d/1oaInPgCIC4bmj1km_1ekqU2LOPCNW_pA/view?usp=sharing) |
+| **Main Web App** | **NETRA-RAIL Command Platform** | [netra-rail.vercel.app](https://netra-rail.vercel.app/) |
+| **Main Codebase** | **NETRA-RAIL Core GitHub Repository** | [GitHub: NETRA-RAIL](https://github.com/Manasvi-Gangrade/NETRA-RAIL) |
+| **Academic Research** | **Official Published Research Paper** | [View on ResearchGate](https://www.researchgate.net/publication/412909876_NETRA-RAIL_National_Enterprise_Traffic_Routing_Autonomous_Rail-Grid) |
+| **API Documentation** | **Interactive Swagger API Specs** | [OpenAPI Docs (Port 8000)](https://netra-rail-backend.onrender.com/docs) |
+| **Pitch Video** | **Team Japan Buddies Pitch Video** | [Watch Pitch Video](https://drive.google.com/file/d/1R9E-1vcXqS20iqk7A6oJL_xdBe-wFvNo/view?usp=sharing) |
+| **Demonstration** | **MVP Explanation & Walkthrough Video** | [Watch MVP Video](https://drive.google.com/file/d/1NMADT7SHeiZWvHsdfXJ0bxiMMUkG7TT0/view?usp=sharing) |
+| **Concept Animation** | **System Architecture Animated Video** | [Watch Animation](https://drive.google.com/file/d/1_3v_emz57zLhMmDDoCc79pb1x67Ytoec/view?usp=sharing) |
 
-Live pulse indicators: every live-data card has a subtle animated glowing dot/heartbeat pulse (like a "LIVE" badge breathing)
+---
 
-Number count-up animations: stats (delay minutes, km monitored, trains active, demurrage saved) animate counting up from 0 on screen load
+![TOC Header](https://img.shields.io/badge/Table%20of%20Contents-7C3AED?style=for-the-badge)
 
-Route/map line-draw animation: train routes and corridor lines animate drawing themselves in on map screens, like a signal tracing across the network
+- [Introduction — The Human Interface Layer](#1-introduction--the-human-interface-layer)
+- [Background & Motivation](#2-background--motivation)
+- [Problem Statement — The Missing Fifth Layer](#3-problem-statement--the-missing-fifth-layer)
+- [Proposed Solution — Role-Adaptive Architecture](#4-proposed-solution--the-role-adaptive-application-architecture)
+  - [Unified Gateway & Role Detection](#41-unified-gateway--login--role-detection)
+  - [Role A: Passenger (Human Sensor & Beneficiary)](#42-role-a--passenger-the-human-sensor--beneficiary)
+  - [Role B: Freight & Logistics Coordinator](#43-role-b--freight--logistics-coordinator-the-supply-chain-cockpit)
+  - [Role C: Station Master & Controller](#44-role-c--station-master--traffic-controller-the-precedence-co-pilot)
+  - [Role D: Trackman & Maintenance Crew](#45-role-d--trackman--maintenance-crew-the-field-verification-layer)
+- [The Common Foundation Layer](#5-the-common-layer--what-every-role-shares)
+- [The Human Flywheel Loop](#6-the-human-flywheel--how-the-app-closes-the-loop)
+- [UX & Design Philosophy](#7-ux--design-philosophy)
+- [Technology Stack](#8-technology-stack)
+- [Security, Privacy & Trust](#9-security-privacy--trust)
+- [Impact & Real-World Applicability](#10-impact--real-world-applicability)
+- [Future Roadmap](#11-future-roadmap)
+- [Conclusion](#12-conclusion)
 
-Card entrance animations: staggered fade+slide-up entrance for dashboard cards (100ms stagger between cards)
+---
 
-Micro-interactions on every tap: buttons have a soft scale-down + glow-ripple on press; toggles (like "Contribute to Track Safety") have a satisfying animated switch with a particle-burst micro-celebration on activation
+![Intro Header](https://img.shields.io/badge/1.%20Introduction%20--%20The%20Human%20Interface%20Layer-10B981?style=for-the-badge)
 
-Flywheel Pulse Widget (shared across all roles): a small circular widget showing 4 nodes (Pillar A/B/C/D) connected by animated flowing dashed lines, with light "packets" continuously traveling around the loop — always animating in the background of the home dashboard, reinforcing "you're part of a living system"
+No autonomous system, however intelligent, can afford to operate as a black box in a domain where human lives, national infrastructure, and enormous economic value are simultaneously at stake.
 
-Slow-zone/alert animations: when a safety alert fires, use a soft radar-ping animation expanding from the affected map point, plus a gentle haptic-style visual shake on the alert card
+The **NETRA-RAIL** core platform is a closed-loop cyber-physical brain — four interconnected pillars silently computing, rerouting, dispatching, and inspecting across Indian Railways' 68,000 route kilometres. However, every algorithmic decision made inside that flywheel eventually surfaces as a real consequence for a real human being:
+- A passenger on a platform wondering why their train has slowed down.
+- A freight coordinator staring at a demurrage bill.
+- A station master deciding whether to trust an AI precedence override during peak-hour congestion.
+- A trackman receiving a maintenance alert on a rain-soaked night shift.
 
-Language switch transition: smooth crossfade + slight vertical slide when switching languages, never a jarring reload
+**NETRA-RAIL MOBILE** is the human interface layer of the same autonomous organism. A single, role-adaptive mobile application that transforms every stakeholder from a passive bystander into an active participant in the autonomous flywheel.
 
-Skeleton loaders, not spinners: wherever data loads, use shimmering skeleton placeholders shaped like the final content
+> **Where the Web Command Center is built for control rooms, NETRA-RAIL MOBILE is built for pockets, platforms, cabins, and track-side construction sites.**
 
-Page transitions: slide + fade between screens, with role-dashboards using a subtle "system re-configuring" transition (brief scan-line wipe effect) when a user first logs into their role — selling the "app is adapting itself to you" concept
+---
 
-3. APP STRUCTURE
+![Background Header](https://img.shields.io/badge/2.%20Background%20%26%20Motivation-1a3a5c?style=for-the-badge)
 
-Screen 1 — Splash & Boot
+Today, every layer of Indian Railways' workforce and ridership interacts with the system through fragmented, analogue, or low-fidelity channels:
 
-Radar-sweep animation on NETRA-RAIL emblem → tricolour hairline reveal → tagline animates in: "India's Autonomous Rail Intelligence — Now in Your Pocket."
+| Stakeholder Layer | Current Operational Bottleneck | NETRA-RAIL Mobile Solution |
+| :--- | :--- | :--- |
+| **Passengers** | Delayed discovery of train holds via crackling platform announcements or generic apps | Live delay-cause explanation (e.g. "Slowed for drone inspection @ KM 134") |
+| **Freight Coordinators** | Manual tracking via phone calls, WhatsApp, and email spreadsheets | Real-time vessel ETA feed, demurrage-risk meter, and one-tap AI override |
+| **Station Masters** | Precedence overrides executed on instinct and radio chatter | Live explainable JSSP precedence feed with instant human override control |
+| **Trackmen Crew** | Verbal orders or paper slips with no verified defect reports | Verified work orders with drone CV imagery, GPS coordinates, and one-tap resolution |
 
-Screen 2 — Unified Login Gateway
+---
 
-Official, DigiLocker-style card-based login on light/navy split-screen background. Four large role-selector cards animate in with icons:
+![Problem Header](https://img.shields.io/badge/3.%20Problem%20Statement%20--%20The%20Missing%20Fifth%20Layer-DC2626?style=for-the-badge)
 
-🧑‍🤝‍🧑 Passenger — "Track your journey, protect the network"
+While the core NETRA-RAIL platform addresses four formal Smart India Hackathon problem statements (SIH25209, SIH25022, SIH25177, SIH25021), a fifth unstated problem undermines real-world deployment:
 
-🚢 Freight & Logistics Coordinator — "Port-to-plant dispatch, live"
-
-🚦 Station Master / Traffic Controller — "Precedence, explained in real time"
-
-🛠️ Trackman / Maintenance Crew — "Verified work orders, in the field"
-
-Each card, on tap, morphs/expands into its respective auth flow (OTP for passenger; employee-ID + biometric/PIN for staff roles) with a smooth shared-element transition. Include a language selector globe icon top-right (230+ languages) available even before login.
-
-Screen 3 — Role-Adaptive Home Dashboard
-
-After login, a brief "Configuring your NETRA-RAIL experience..." animated loading state (system re-configuring transition), then the role-specific home renders.
-
-4. ROLE DASHBOARDS — BUILD EACH ONE IN FULL DESCRIPTIVE DEPTH
-
-🧑‍🤝‍🧑 PASSENGER DASHBOARD
-
-Hero card: current/next journey with animated live train-position marker moving along a route line, ETA with live countdown
-
-Big animated toggle: "Contribute to Track Safety" — when switched on, show a subtle animated waveform icon (representing live IMU streaming) pulsing quietly, plus a reassuring micro-copy: "Your phone is helping protect 68,000 km of track. Anonymously. Always your choice."
-
-"Track Guardian Score" widget: circular progress ring that fills with an animated count-up, showing km monitored this month, with a small badge/level system (Bronze/Silver/Gold Guardian) — gamified, celebratory confetti-burst animation on leveling up
-
-"Why is my train delayed?" explainer card — expands with a smooth accordion animation to show plain-language reasoning + a live drone-inspection countdown if relevant
-
-Nearby alerts map — animated pin-drop for slow zones near the route
-
-Floating multilingual voice assistant button (mic icon with breathing glow) — bottom right, always accessible
-
-Bottom nav: Home / My Journeys / Track Guardian / Alerts / Profile
-
-🚢 FREIGHT & LOGISTICS COORDINATOR DASHBOARD
-
-Top stat strip with count-up animated numbers: Vessels Docked Today, Wagons Dispatched, Demurrage Risk (₹), Active Corridors
-
-Live vessel ETA feed — vertical timeline with animated progress dots moving along it as time passes
-
-Demurrage-risk meter — animated circular gauge (green→amber→red) with a needle-sweep animation on load
-
-Dispatch queue cards with Approve / Override buttons — override triggers a modal requiring a reason (dropdown + text), with a satisfying confirm-animation (checkmark draw-in)
-
-Multi-port switcher — horizontal scrollable pill-tabs with an animated underline indicator sliding between them
-
-Natural-language query bar at top ("Ask about any corridor...") with animated placeholder text cycling through example queries in different languages
-
-🚦 STATION MASTER / TRAFFIC CONTROLLER DASHBOARD
-
-Full-width live precedence feed — a horizontally scrolling animated "track" visual showing train icons (colour-coded by speed class) with the AI's held/passed decision animating in real time, each with a small "why" tooltip that expands on tap
-
-Slow-zone alert banner — appears with a sharp slide-down + amber pulse animation when Pillar C/D flags something, showing live drone-inspection ETA counting down
-
-Large, unmistakable "TAKE MANUAL CONTROL" override button — bold, high-contrast, satisfying press animation, because this is the single most safety-critical action in the app
-
-Section throughput chart — animated bar/line chart that draws itself in on load
-
-Voice-command large mic button optimized for control-room hands-busy use
-
-🛠️ TRACKMAN / MAINTENANCE CREW DASHBOARD
-
-High-contrast, large-touch-target layout (outdoor sunlight readability, glove-friendly)
-
-Incoming work-order cards — each with drone-captured inspection thumbnail image, GPS coordinate, defect classification badge, and a large "Navigate" button (opens offline-capable map with animated route-draw)
-
-QR/laser-marker "Scan to Confirm" button — opens camera view with an animated scanning-frame overlay
-
-Big "Mark Resolved" button — on tap, triggers a satisfying full-screen success animation (checkmark burst + "Slow-zone lifting..." live status), visually closing the loop
-
-SOS/Hazard-report floating button — pulsing red, always visible, for immediate escalation
-
-Offline indicator — subtle badge showing "Cached · Will sync when online" with animated sync icon when connectivity returns
-
-5. SHARED COMPONENTS (across all roles)
-
-Flywheel Pulse Widget — always present on home dashboard (see animation section above)
-
-Notification Center — priority-tiered (Safety-Critical / Operational / Informational), each tier with distinct color coding and entrance animation
-
-Language & Voice Switcher — accessible from every screen header, 230+ languages, smooth transition on switch
-
-Privacy & Consent Center — official-feeling settings page (light mode, govt-portal styling) where users can view/pause/delete their contributed data, with clear toggle animations
-
-Profile/Identity Card — styled like an official digital ID card (DigiLocker-esque), with role badge, verification checkmark, and subtle holographic shimmer animation on the card edge
-
-6. CONTENT & TONE GUIDELINES
-
-Headers: formal, official, national-infrastructure tone ("NETRA-RAIL National Rail Intelligence Network," "Government-Verified Safety Data")
-
-Body/microcopy: warm, clear, human — explain AI decisions in plain language, never jargon
-
-Always pair automation with explainability: no action should ever feel like a "black box" — show the "why" everywhere
-
-Use real Indian rail geography and corridor names (Mundra, JNPT, Vishakhapatnam, Golden Quadrilateral, Vadodara–Surat, JNPT–Tata Steel) for authenticity in mock data
-
-7. DATA / BUILD NOTES
-
-This is a hackathon prototype — use realistic mock/simulated live data (animated counters, fake but plausible train IDs, coordinates, ETAs) rather than real APIs
-
-Structure mock data so it's easy to swap for real endpoints later (clean data layer, not hardcoded inline)
-
-Prioritize building the Passenger and Station Master dashboards first in full animated depth (these best tell the core story), then Freight Coordinator and Trackman
-
-Make it fully responsive but mobile-first — this is a phone app experience, optimize all animations and layouts for a 375–430px viewport primarily
-
-Build this as a visually stunning, animation-rich, official-feeling national infrastructure app — something that would make a room of hackathon judges go quiet for a second before they start clapping., this is an assistive application to the original deployed project, isko refer kar lena and code wali cheeze bhi kar lena refer is repo se https://netra-rail.vercel.app/, https://github.com/Manasvi-Gangrade/NETRA-RAIL, bohot accha bohot sundar and same theme pr banana bhai please please please I trust you onto this and graphs, charts and sab kuch bohot acche acche diagrams and all daalna and bhaiii banana web hi but mobile responsive.
-
-## Development & Local Execution
-
-Prefer working locally? You need Node.js and npm:
-
-```sh
-git clone https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile.git
-cd NETRA-RAIL-Mobile
-npm i
-npm run dev
 ```
++-----------------------------------------------------------------------------------+
+| PROBLEM 5: ABSENCE OF A UNIFIED ROLE-AWARE HUMAN-IN-THE-LOOP INTERFACE             |
++-----------------------------------------------------------------------------------+
+| Autonomous decision engines governing freight logistics, traffic precedence, and  |
+| infrastructure safety currently operate with no direct, real-time, role-adaptive   |
+| communication channel to the human stakeholders who must trust or act upon them.  |
+| This absence creates adoption resistance, delayed human responses to safety       |
+| alerts, and a persistent trust deficit.                                           |
++-----------------------------------------------------------------------------------+
+```
+
+**NETRA-RAIL MOBILE** exists to solve this exact fifth problem — turning four backend AI pillars into a visible, trusted, and actively co-piloted experience.
+
+---
+
+![Architecture Header](https://img.shields.io/badge/4.%20Proposed%20Solution%20--%20Role--Adaptive%20Architecture-1a3a5c?style=for-the-badge)
+
+NETRA-RAIL MOBILE is architected as a **single application binary** with a unified authentication gateway. At login, the app dynamically detects the user's role and reshapes its navigation, permission matrix, and visual interface around that stakeholder.
+
+### 4.1 Unified Gateway & Role Detection
+- **Passengers:** Authenticate via mobile OTP or DigiLocker — instant, frictionless access.
+- **Freight Coordinators:** Authenticate via port/plant organisation employee ID.
+- **Station Masters & Controllers:** Authenticate via Indian Railways staff credentials with Zonal Role-Based Access Control (RBAC).
+- **Trackmen & Field Crew:** Authenticate via a low-literacy-friendly PIN or biometric flow optimized for gloved, trackside use.
+
+---
+
+![RoleA Header](https://img.shields.io/badge/4.2%20Role%20A%20--%20Passenger%20(Human%20Sensor%20%26%20Beneficiary)-10B981?style=for-the-badge)
+
+Transforms every passenger into both a beneficiary of real-time operational transparency and a literal sensor node powering Pillar C's crowdsourced track monitoring.
+
+```
+[Journey Detection] --> [Toggle: "Contribute to Track Safety"]
+                                  |
+               [Passive 3-Axis IMU Background Stream]
+                                  |
+              [Live Transparent Delay Reason & ETA Feed]
+                                  |
+                     [Track Guardian Score Tally]
+```
+
+- **Background Sensing Toggle:** One-tap opt-in to stream anonymised 3-axis accelerometer and gyroscope data to Pillar C's AKNN vector engine.
+- **Transparent Delay Explanations:** "Train slowed near KM 134 due to active track verification. Drone inspection ETA: 12 minutes."
+- **Track Guardian Score:** Gamified running tally of kilometres monitored and track anomalies indirectly detected.
+- **Multilingual Assistant:** Natural language voice/text query engine ("Mera train kahan hai?", "Delay kyun hai?") answered in regional dialects.
+
+---
+
+![RoleB Header](https://img.shields.io/badge/4.3%20Role%20B%20--%20Freight%20%26%20Logistics%20Coordinator-F59E0B?style=for-the-badge)
+
+Serves as a pocket supply-chain cockpit for Pillar A's intermodal freight synchronisation engine.
+
+- **Vessel ETA Feed:** Real-time shipping port manifests linked downstream to wagon dispatch queue previews.
+- **Demurrage-Risk Meter:** Colour-coded live financial risk tracking per port/plant.
+- **One-Tap AI Override:** Approve or override AI-recommended dispatch queues with mandatory rationale logging for institutional learning.
+
+---
+
+![RoleC Header](https://img.shields.io/badge/4.4%20Role%20C%20--%20Station%20Master%20%26%20Controller-7C3AED?style=for-the-badge)
+
+Acts as an explainable precedence co-pilot for Pillar B's real-time JSSP section throughput optimizer.
+
+- **Explainable Precedence Feed:** Live visual queue of which freight trains are held at loop lines and for how long.
+- **Slow-Zone Visibility:** Instant notification when Pillar C/D trigger speed restrictions, paired with live drone flight ETAs.
+- **Instant Manual Override:** Single large control allowing controllers to take back manual authority in seconds.
+
+---
+
+![RoleD Header](https://img.shields.io/badge/4.5%20Role%20D%20--%20Trackman%20%26%20Maintenance%20Crew-10B981?style=for-the-badge)
+
+Engineered specifically for field conditions — bright sunlight, gloved operation, rain, and low connectivity.
+
+- **Verified Work Orders:** Pushed directly from Pillar D's Garun CV engine with drone-captured imagery, GPS coordinates, and defect classification.
+- **Offline-First Storage:** Local caching of maps and work orders for zero-connectivity track segments.
+- **One-Tap "Mark Resolved":** Field verification that immediately signals Pillar B to lift the corresponding slow-zone speed restriction.
+
+---
+
+![Common Header](https://img.shields.io/badge/5.%20The%20Common%20Foundation%20Layer-1a3a5c?style=for-the-badge)
+
+- **230+ Languages & Voice AI:** Powered by **IndicTrans2** and BCP-47 TTS locale mapping across every screen and role.
+- **Live Flywheel Pulse Widget:** A compact, always-visible status indicator showing the connected 4-pillar health.
+- **Offline-First Sync:** WatermelonDB local caching for uninterrupted field performance.
+- **Privacy & Consent Center:** Transparent settings allowing users to pause or delete contributed telemetry at any time.
+
+---
+
+![Flywheel Header](https://img.shields.io/badge/6.%20The%20Human%20Flywheel%20Loop-F59E0B?style=for-the-badge)
+
+```
+[Passenger App] Opts in to Track Safety -> IMU telemetry streams to Pillar C
+       |
+       v
+[Pillar C] Anomaly cluster isolated at GPS coordinate -> Geo-tagged flag generated
+       |
+       v
+[Controller App] Station Master sees live slow-zone enforcement the instant it fires
+       |
+       v
+[Trackman App] Verified work order with drone imagery pushed to nearest crew
+       |
+       v
+Crew resolves defect on-site -> Taps "Mark Resolved"
+       |
+       v
+[Pillar B] Slow-zone automatically lifted -> Section throughput restored
+       |
+       v
+[Passenger App] Journey ETA silently recalculates and updates in real time
+```
+
+> **No phone calls. No paper slips. Zero opacity. The loop begins with a commuter's smartphone and ends with that same commuter seeing their ETA correct itself.**
+
+---
+
+![Tech Stack Header](https://img.shields.io/badge/8.%20Technology%20Stack-1a3a5c?style=for-the-badge)
+
+| Component | Technology / Library |
+| :--- | :--- |
+| **Cross-Platform Framework** | React Native (Expo) — Single codebase for iOS & Android |
+| **Local Offline Database** | WatermelonDB & Redux Toolkit (Offline-First local storage) |
+| **Real-Time Messaging** | Firebase Cloud Messaging & WebSockets via FastAPI Backend |
+| **Background Telemetry** | React Native Sensors API (3-Axis Accelerometer & Gyroscope) |
+| **Authentication & RBAC** | Firebase Auth, OTP / DigiLocker, Railway SSO |
+| **Geospatial & Mapping** | Mapbox Mobile SDK with offline map-tile caching |
+| **Multilingual NLP & Voice** | IndicTrans2, Speech-to-Text / Text-to-Speech Engine |
+| **Backend AI Bridge** | Shared FastAPI Services with NETRA-RAIL Core Engine |
+
+---
+
+![Security Header](https://img.shields.io/badge/9.%20Security%2C%20Privacy%20%26%20Trust-DC2626?style=for-the-badge)
+
+- **Anonymised Telemetry:** Passenger IMU sensor data is scrubbed of device identifiers before vector ingestion.
+- **Strict Opt-In:** Background sensing is 100% voluntary, pausable, and deletable.
+- **Immutable Audit Trail:** Staff overrides and work order resolutions require mandatory rationale logging.
+- **Strict Role Isolation:** RBAC ensures passenger accounts cannot view staff or operational control data.
+
+---
+
+![Roadmap Header](https://img.shields.io/badge/11.%20Future%20Roadmap-7C3AED?style=for-the-badge)
+
+- **Phase 1 (Current MVP):** Interactive passenger role with simulated IMU contribution, live flywheel pulse widget, and unified 4-role login gateway.
+- **Phase 2 (Delhi Round):** Live push notifications connected to core Pillar B/C/D events; offline-first trackman sync verified in low-signal zones.
+- **Phase 3 (Japan Finale):** Production rollout across a pilot zonal railway with real employee SSO and live coordinator override authority.
+
+---
+
+![Conclusion Header](https://img.shields.io/badge/12.%20Conclusion-10B981?style=for-the-badge)
+
+An autonomous system is only as strong as the trust humans place in it. NETRA-RAIL's four pillars solve the hardest computational problems in rail logistics and traffic — but computation alone does not move a controller to accept an AI override or reassure a passenger during a delay.
+
+**NETRA-RAIL MOBILE is the layer that earns that trust.** One application binary. Four dynamic roles. One transparent window into the future of Indian Railways.
+
+---
+
+<div align="center">
+
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=F59E0B&center=true&vCenter=true&width=600&lines=NETRA-RAIL+MOBILE+%7C+Far+Away+Hackathon+2026;Theme%3A+Railways+%7C+Build+Boldly.+Ship+Something+Real.;Top+5+%E2%86%92+Fully+Sponsored+Japan+Trip)
+
+[![Star](https://img.shields.io/github/stars/Manasvi-Gangrade/NETRA-RAIL-Mobile?style=social)](https://github.com/Manasvi-Gangrade/NETRA-RAIL-Mobile)
+
+*Developed by Team Japan Buddies for Indian Railways*
+
+</div>

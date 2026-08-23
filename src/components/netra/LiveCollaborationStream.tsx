@@ -93,12 +93,16 @@ export function useNonDisruptiveCollaboration() {
   useEffect(() => {
     let poolIndex = 0;
     const interval = setInterval(() => {
-      const template = STREAM_POOL[poolIndex % STREAM_POOL.length];
+      const item = STREAM_POOL[poolIndex % STREAM_POOL.length];
+      if (!item) return;
       poolIndex++;
 
       const newEvent: CollaborationEvent = {
         id: `collab-${Date.now()}`,
-        ...template,
+        user: item.user,
+        role: item.role,
+        action: item.action,
+        location: item.location,
         time: "Just now",
       };
 
@@ -118,11 +122,10 @@ export function NonDisruptiveCollaborationBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if (lastUpdate) {
-      setVisible(true);
-      const t = setTimeout(() => setVisible(false), 5000);
-      return () => clearTimeout(t);
-    }
+    if (!lastUpdate) return;
+    setVisible(true);
+    const t = setTimeout(() => setVisible(false), 5000);
+    return () => clearTimeout(t);
   }, [lastUpdate]);
 
   return (
